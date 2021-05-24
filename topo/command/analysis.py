@@ -588,7 +588,7 @@ class measure_od_pref(SinusoidalMeasureResponseCommand):
 
 pg= create_plotgroup(name='Ocular Preference',category="Preference Maps",
              doc='Measure preference for sine gratings between two eyes.',
-             pre_plot_hooks=[measure_sine_pref.instance()])
+             pre_plot_hooks=[measure_sine_pref.instance(num_ocularity=2)])
 pg.add_plot('Ocular Preference',[('Strength','OcularPreference')])
 pg.add_plot('Ocular Selectivity',[('Strength','OcularSelectivity')])
 
